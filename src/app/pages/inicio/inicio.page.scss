@@ -1,0 +1,95 @@
+:host {
+  display: block;
+  height: 100vh; 
+  width: 100vw;  
+  position: relative;
+  overflow: hidden; 
+
+  background-image: url('src/assets/imagenes/scary_movie_inicio2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  image-rendering: auto; 
+  will-change: transform; 
+}
+
+
+:host::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35); 
+  z-index: 0;
+  pointer-events: none; 
+  transition: background-color 0.3s ease; 
+}
+
+
+ion-header,
+ion-content {
+  position: relative;
+  z-index: 1;
+}
+
+ion-content {
+  height: 100%;
+  width: 100%;
+  --background: transparent; 
+  scroll-behavior: smooth; 
+}
+.texto-cambiante {
+  font-size: 1.2em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 20px;
+  animation: cambiarColor 10s infinite alternate;
+}
+.container{
+  text-align: center;
+  margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.aboutbuttom {
+  --background: #ffffff; 
+  --color: rgb(0, 0, 0);        
+  font-weight: bold;
+  border-radius: 10px;
+  margin-right: 10px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+
+.aboutbuttom:hover {
+  --background: #560c02; 
+  --color:#ffffff;
+  transform: scale(1.05);
+}
+.iracontacto {
+  --background: #ffffff; 
+  --color: rgb(0, 0, 0);        
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.iracontacto:hover{
+  --background: #560c02; 
+  --color: #ffffff;
+  transform: scale(1.05);
+}
+.contactotext{
+  font-weight: bold;
+}
+.gostfacesoundtrack{
+  display: none;
+  
+}

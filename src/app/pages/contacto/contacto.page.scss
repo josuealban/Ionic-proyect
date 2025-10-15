@@ -1,0 +1,43 @@
+:host {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: url('/assets/imagenes/maxresdefault.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+:host::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+ion-header,
+ion-content {
+  position: relative;
+  z-index: 1;
+}
+
+ion-content {
+  --background: transparent;
+}
+
+.iniciobutton {
+  --background: #ffffff; 
+  --color: rgb(0, 0, 0);        
+  font-weight: bold;
+  border-radius: 10px;
+  margin-right: 10px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.iniciobutton:hover {
+  --background: #560c02; 
+  --color:#ffffff;
+  transform: scale(1.05);
+}
+

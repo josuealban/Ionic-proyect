@@ -1,0 +1,95 @@
+
+.informacion{
+    background-color: rgb(21, 163, 181);
+}
+.iniciobutton {
+  --background: #ffffff; 
+  --color: rgb(0, 0, 0);        
+  font-weight: bold;
+  border-radius: 10px;
+  margin-right: 10px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.iniciobutton:hover {
+  --background: #560c02; 
+  --color:#ffffff;
+  transform: scale(1.05);
+}
+
+:host {
+  display: block;
+  height: 100vh; 
+  width: 100vw;  
+  position: relative;
+  overflow: hidden; 
+
+  
+  background-image: url('src/assets/imagenes/renderizado2.avif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  image-rendering: auto; 
+  will-change: transform; 
+}
+
+
+:host::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35); 
+  z-index: 0;
+  pointer-events: none; 
+  transition: background-color 0.3s ease; 
+}
+
+
+ion-header,
+ion-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+ion-content {
+  height: 100%;
+  width: 100%;
+  --background: transparent; 
+  scroll-behavior: smooth; 
+}
+.descripcion {
+  font-size: 1.2em;
+  color: rgb(240, 240, 240);
+  text-align: center;
+  margin-top: 20px;
+  animation: cambiarColor 10s infinite alternate;
+}
+.descripcioncontainer{
+  text-align: center;
+  margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.aboutcontainer{
+  text-align: center;
+  margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.container{
+  text-align: center;
+  margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
