@@ -20,6 +20,10 @@ export const routes: Routes = [
     path: 'contacto',
     loadComponent: () => import('./pages/contacto/contacto.page').then( m => m.ContactoPage)
   },
+  {
+    path: 'perfil',
+    loadComponent: () => import('./perfil/perfil.page').then( m => m.PerfilPage)
+  },
   
   
 ];

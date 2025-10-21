@@ -5,7 +5,7 @@
   position: relative;
   overflow: hidden; 
 
-  background-image: url('src/assets/imagenes/scary_movie_inicio2.jpg');
+  background-image: url('../../../assets/imagenes/scary_movie_inicio2.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,4 +92,18 @@ ion-content {
 .gostfacesoundtrack{
   display: none;
   
+}
+.iraperfil {
+  --background: #ffffff; 
+  --color: rgb(0, 0, 0);        
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.iraperfil:hover{
+  --background: #560c02; 
+  --color: #ffffff;
+  transform: scale(1.05);
 }
