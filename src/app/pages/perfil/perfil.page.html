@@ -1,15 +1,10 @@
 <ion-header translucent="true">
   <ion-toolbar class="headerbar">
-   
-    <ion-button class="back" routerLink="/Inicio">inicio</ion-button> 
-
-
+    <ion-button class="back" routerLink="/Inicio">inicio</ion-button>
     <ion-title class="title">Perfil del Usuario</ion-title>
-  
-   
-    </ion-toolbar>
+  </ion-toolbar>
 </ion-header>
- 
+
 <ion-content class="ion-padding">
 
   <ion-card class="perfil-card">
@@ -40,6 +35,21 @@
   <div class="boton-container">
     <ion-button expand="block" class="guardar" (click)="guardarCambios()">
       Guardar cambios
+    </ion-button>
+  </div>
+
+ 
+  <div class="modales-container">
+    <ion-button expand="block" color="secondary" (click)="abrirModalDetalle()">
+      Ver Detalles
+    </ion-button>
+
+    <ion-button expand="block" color="warning" (click)="abrirModalEditar()">
+      Editar Perfil
+    </ion-button>
+
+    <ion-button expand="block" color="danger" (click)="abrirModalConfirmar()">
+      Cerrar Sesión
     </ion-button>
   </div>
 

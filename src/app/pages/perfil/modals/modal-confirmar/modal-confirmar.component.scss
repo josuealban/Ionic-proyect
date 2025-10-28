@@ -1,0 +1,39 @@
+ion-content {
+  --background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 30px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #bbb;
+  margin-bottom: 25px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+ion-button[color="danger"] {
+  --background: #b30000;
+  --color: #fff;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+ion-button[fill="outline"] {
+  --color: #fff;
+  --border-color: #fff;
+  border-radius: 10px;
+}
